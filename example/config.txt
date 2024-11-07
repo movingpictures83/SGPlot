@@ -1,0 +1,2 @@
+Prefix plugins/SGPlot/example/
+Plugin SGPlot inputfile Annotate.rds outputfile Annotate.splicegraph.pdf
