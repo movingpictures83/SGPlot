@@ -21,8 +21,8 @@ output <- function(outputfile) {
 pdf(outputfile)
 par(mfrow = c(5, 1), mar = c(1, 3, 1, 1))
 plotSpliceGraph(rowRanges(sgfc_pred_pred), geneID = 1, toscale = "none", color_novel = "red")
-
-
+#print(str(sgfc_pred_pred))
+write.csv(sgfc_pred_pred@assays@data$FPKM, paste(outputfile, "csv", sep="."))
 #plotFeatures(sgfc_ucsc, geneID = 1)
 }
 
